@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!--Mise en place du nom du site, de l'icône et des références css-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site alternatif de l'IIM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="LogoIIM.png">
+</head>
+<body>
+    <!--Header contenant le bouton dark mode  et les tabs qui ne sont pas fonctionnelles-->
+    <header id="header" class="light_hr">
+        <button id="button" class="light_bn">Light Mode</button>
+        <ul class="flex_container">
+            <li id="li1" class="tab">Cartes</li>
+            <li id="li2" class="tab">Menu</li>
+            <li id="li3" class="tab">Cours</li>
+        </ul>
+    </header>
+    <!--Main qui contient les différents block, qui alternent selon la tab séléctionnée-->
+    <main>
+        <!--Premier menu, main menu-->
+        <main id="menu_bg" class="light_menu_bg">
+            <div id="menu" class="menu_active">
+                <div class="flex_container">
+                    <img src="de_vinci_light.png" alt="IIM digital school" id="img1" class="light_img" width="50px" height="50px">
+                    <p id="text" class="text">IIM Digital School</p>
+                    <img src="de_vinci_light.png" alt="IIM digital school" id="img2" class="light_img" width="50px" height="50px">
+                </div>
+                <!--Swiper-->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div id="slide1" class="swiper-slide"><div><p class="text2">La Défense</p></div><img src="iim1.webp" alt="iim"></div>
+                    <div id="slide2" class="swiper-slide"><div><p class="text2">Nantes</p></div><img src="iim2.jpg" alt="iim"></div>
+                    <div id="slide3" class="swiper-slide"><div><p class="text2">Campus de l'arche</p></div><img src="iim3.webp" alt="iim"></div>
+                    <div id="slide4" class="swiper-slide"><div><p class="text2">Campus De Vinci</p></div><img src="iim4.jpg" alt="iim"></div>
+                    <div id="slide5" class="swiper-slide"><div><p class="text2">L'amphi'</p></div><img src="iim5.jpg" alt="iim"></div>
+                    <div id="slide6" class="swiper-slide"><div><p class="text2">Le campus de l'arche</p></div><img src="iim_digital_school.webp" alt="iim"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </main>
+        <!--Deuxième menu, les cartes, avec l'api-->
+        <main id="cartes_bg" class="light_cartes_bg"></div>
+            <div id="cartes" class="unactive">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div id="slide1" class="swiper-slide"><div><p id="text_chara1">--</p></div><img id="image_chara1" src="" alt="image"></div>
+                    <div id="slide2" class="swiper-slide"><div><p id="text_chara2">--</p></div><img id="image_chara2" src="" alt="image"></div>
+                    <div id="slide3" class="swiper-slide"><div><p id="text_chara3">--</p></div><img id="image_chara3" src="" alt="image"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div>
+                    <p class="text3">Toutes les images situées ci-dessus sont issues du site https://hp-api.lainocs.fr via un API.</p>
+                </div>
+            </div>
+        </main>
+        <!--Troisième menu, cours-->
+        <main id="cours_bg" class="light_cours_bg"></div>
+            <div id="cours" class="unactive">
+                <div class="flex_container">
+                    <img src="gaming.jpg" alt="gaming" width="600px">
+                    <p class="text1">Ici ça game un peu.</p>
+                </div>
+                <div class="flex_container">
+                    <p class="text1">Mais ça bosse surtout.</p>
+                    <img src="iim5.jpg" alt="gaming" width="600px">
+                </div>
+            </div>
+        </main>
+        <!--Footer pour le pied de page-->
+        <footer id="footer" class="light_fr">
+            <p>Mentions Légales - Elouan LE STRAT - Restart 2024</p>
+        </footer>
+    </main>
+    <!--Lien avec les scripts js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
